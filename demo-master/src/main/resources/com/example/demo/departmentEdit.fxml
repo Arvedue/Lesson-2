@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo.Controller.Department.DepartmentEditController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <TextField fx:id="Dname" layoutX="24.0" layoutY="37.0" prefHeight="25.0" prefWidth="255.0" />
+        <Label layoutX="24.0" layoutY="20.0" text="Название отдела" />
+        <TextField fx:id="Dnumber" layoutX="24.0" layoutY="100.0" prefHeight="25.0" prefWidth="255.0" />
+        <Label layoutX="24.0" layoutY="79.0" text="Номер отдела" />
+        <TextField fx:id="Mgr_ssn" layoutX="300.0" layoutY="100.0" prefHeight="25.0" prefWidth="255.0" />
+        <Label layoutX="300.0" layoutY="79.0" text="Ssn Менеджера" />
+        <Label layoutX="300.0" layoutY="20.0" text="Дата началы работы Менеджера" />
+        <DatePicker fx:id="Mgr_start_date" layoutX="300.0" layoutY="37.0" prefHeight="25.0" prefWidth="255.0" />
+        <Button fx:id="submitButton" layoutX="250.0" layoutY="284.0" mnemonicParsing="false" onAction="#updateDepartment" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #0098f0;" text="Создать" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="15.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

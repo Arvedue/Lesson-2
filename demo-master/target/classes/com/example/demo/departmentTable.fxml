@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="402.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller.Department.DepartmentController">
+    <children>
+        <TableView fx:id="departmentTable" prefHeight="300.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="dNameColumn" prefWidth="100.0" text="Название" />
+                <TableColumn fx:id="mgrSsnColumn" prefWidth="100.0" text="Ssn менеджера" />
+                <TableColumn fx:id="mgrStartDateColumn" prefWidth="100.0" text="Начало работы менеджера" />
+                <TableColumn fx:id="editColumn" prefWidth="75.0" text="Изменение" />
+                <TableColumn fx:id="deleteColumn" prefWidth="75.0" resizable="false" text="Удаление" />
+            </columns>
+        </TableView>
+        <Button fx:id="addButton" defaultButton="true" layoutX="200.0" layoutY="332.0" mnemonicParsing="false" onAction="#openCreatePage" prefHeight="8.0" prefWidth="300.0" text="Добавить новую запись" textAlignment="CENTER">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
